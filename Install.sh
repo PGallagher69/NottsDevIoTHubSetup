@@ -12,8 +12,7 @@ cd wiringPi
 sudo apt-get remove nodered -y
 sudo apt-get remove nodejs -y
 cd ~/
-curl -L https://git.io/n-install | bash
-n 6.10.2
+curl -L https://git.io/n-install | bash -s -- -y 6.10.2
 node -v
 n=$(which node); n=${n%/bin/node}; chmod -R 755 $n/bin/*; sudo cp -r $n/{bin,lib,share} /usr/local
 sudo node -v
