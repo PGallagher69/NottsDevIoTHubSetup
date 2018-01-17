@@ -24,4 +24,6 @@ cd /home/pi/share
 git clone -b start https://github.com/PGallagher69/NottsDevIoTHub.git
 cd /home/pi/share/NottsDevIoTHub
 npm install
+sudo chown -R pi /home/pi/share
+sudo chmod -R +777 /home/pi/share
 read -n 1 -s -r -p "Press any key to finish"
