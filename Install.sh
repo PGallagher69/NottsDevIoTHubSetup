@@ -10,7 +10,7 @@ git clone git://git.drogon.net/wiringPi
 cd wiringPi
 ./build
 sudo apt-get remove nodered -y
-sudo apt-get remove nodejs
+sudo apt-get remove nodejs -y
 curl -L https://git.io/n-install | bash
 n 6.10.2
 node -v
