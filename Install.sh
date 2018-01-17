@@ -1,7 +1,7 @@
 sudo apt-get update
 sudo rpi-update 52241088c1da59a359110d39c1875cda56496764
 sudo apt-get install samba samba-common-bin -y
-echo -e "raspberry\nraspberry\n" | smbpasswd -s -a pi
+printf "raspberry\nraspberry\n" | smbpasswd -a -s pi
 mkdir /home/pi/share
 #sudo nano /etc/samba/smb.conf
 cat SambaShare.txt >> /etc/samba/smb.conf
