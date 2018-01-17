@@ -11,6 +11,7 @@ cd wiringPi
 ./build
 sudo apt-get remove nodered -y
 sudo apt-get remove nodejs -y
+cd ~/
 curl -L https://git.io/n-install | bash
 n 6.10.2
 node -v
