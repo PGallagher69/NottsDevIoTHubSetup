@@ -9,7 +9,7 @@ mkdir /home/pi/share
 cat SambaShare.txt >> /etc/samba/smb.conf
 sudo service smb restart
 cd /home/pi
-git clone git://git.drogon.net/wiringPi
+git clone git://git.drogon.net/wiringPi /home/pi/wiringPi
 cd /home/pi/wiringPi
 ./build
 sudo apt-get remove nodered -y
@@ -21,7 +21,7 @@ node -v
 n=$(which node); n=${n%/bin/node}; chmod -R 755 $n/bin/*; sudo cp -r $n/{bin,lib,share} /usr/local
 sudo node -v
 cd /home/pi/share
-git clone -b start https://github.com/PGallagher69/NottsDevIoTHub.git
+git clone -b start https://github.com/PGallagher69/NottsDevIoTHub.git /home/pi/share/NottsDevIoTHub
 cd /home/pi/share/NottsDevIoTHub
 npm install
 sudo chown -R pi /home/pi/share
