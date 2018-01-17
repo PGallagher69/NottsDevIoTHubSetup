@@ -7,8 +7,8 @@ printf "raspberry\nraspberry\n" | smbpasswd -a -s pi
 mkdir /home/pi/share
 #sudo nano /etc/samba/smb.conf
 cat SambaShare.txt >> /etc/samba/smb.conf
-smbd_restart
-cd 
+sudo service smb restart
+cd /home/pi
 git clone git://git.drogon.net/wiringPi
 cd /home/pi/wiringPi
 ./build
@@ -25,5 +25,5 @@ git clone -b start https://github.com/PGallagher69/NottsDevIoTHub.git
 cd /home/pi/share/NottsDevIoTHub
 npm install
 sudo chown -R pi /home/pi/share
-sudo chmod -R +777 /home/pi/share
+sudo chmod -R +755 /home/pi/share
 read -n 1 -s -r -p "Press any key to finish"
