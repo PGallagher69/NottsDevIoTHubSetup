@@ -5,7 +5,7 @@ echo -e "\e[32m***************************************"
 echo -e "\e[32m*            01 OF 25                 *"
 echo -e "\e[32m*            UPDATING                 *"
 echo -e "\e[32m***************************************"
-echo -e "\n"
+echo -e "\e[0m\n"
 
 sudo apt-get update
 
@@ -14,7 +14,7 @@ echo -e "\e[32m***************************************"
 echo -e "\e[32m*            02 OF 25                 *"
 echo -e "\e[32m*        FLASHING FIRMWARE            *"
 echo -e "\e[32m***************************************"
-echo -e "\n"
+echo -e "\e[0m\n"
 
 sudo rpi-update 52241088c1da59a359110d39c1875cda56496764
 
@@ -23,7 +23,7 @@ echo -e "\e[32m***************************************"
 echo -e "\e[32m*            03 OF 25                 *"
 echo -e "\e[32m*         INSTALLING SAMBA            *"
 echo -e "\e[32m***************************************"
-echo -e "\n"
+echo -e "\e[0m\n"
 
 sudo apt-get install samba samba-common-bin -y
 
@@ -32,7 +32,7 @@ echo -e "\e[32m***************************************"
 echo -e "\e[32m*            04 OF 25                 *"
 echo -e "\e[32m*      SETTING SAMBA PASSWORD         *"
 echo -e "\e[32m***************************************"
-echo -e "\n"
+echo -e "\e[0m\n"
 
 printf "raspberry\nraspberry\n" | smbpasswd -a -s pi
 
@@ -41,7 +41,7 @@ echo -e "\e[32m***************************************"
 echo -e "\e[32m*            05 OF 25                 *"
 echo -e "\e[32m*      CREATING SHARE DIRECTORY       *"
 echo -e "\e[32m***************************************"
-echo -e "\n"
+echo -e "\e[0m\n"
 
 mkdir /home/pi/share
 
