@@ -50,7 +50,7 @@ echo -e "\e[32m***************************************"
 echo -e "\e[32m*            06 OF 25                 *"
 echo -e "\e[32m*       ADDING SHARE CONFIG           *"
 echo -e "\e[32m***************************************"
-echo -e "\n"
+echo -e "\n\e[0m"
 
 cat SambaShare.txt >> /etc/samba/smb.conf
 
@@ -59,7 +59,7 @@ echo -e "\e[32m***************************************"
 echo -e "\e[32m*            07 OF 25                 *"
 echo -e "\e[32m*      RESTART SAMBA SERVICE          *"
 echo -e "\e[32m***************************************"
-echo -e "\n"
+echo -e "\n\e[0m"
 
 sudo service smb restart
 
@@ -68,7 +68,7 @@ echo -e "\e[32m***************************************"
 echo -e "\e[32m*            08 OF 25                 *"
 echo -e "\e[32m*        SETTING DIRECTORY            *"
 echo -e "\e[32m***************************************"
-echo -e "\n"
+echo -e "\n\e[0m"
 
 cd /home/pi
 #git clone git://git.drogon.net/wiringPi /home/pi/wiringPi
@@ -78,7 +78,7 @@ echo -e "\e[32m***************************************"
 echo -e "\e[32m*            09 OF 25                 *"
 echo -e "\e[32m*        GETTING WIRINGPI             *"
 echo -e "\e[32m***************************************"
-echo -e "\n"
+echo -e "\n\e[0m"
 
 git clone https://github.com/WiringPi/WiringPi.git /home/pi/wiringPi
 
@@ -87,7 +87,7 @@ echo -e "\e[32m***************************************"
 echo -e "\e[32m*            10 OF 25                 *"
 echo -e "\e[32m*       SETTING DIRECTORY             *"
 echo -e "\e[32m***************************************"
-echo -e "\n"
+echo -e "\n\e[0m"
 
 cd /home/pi/wiringPi
 
@@ -96,7 +96,7 @@ echo -e "\e[32m***************************************"
 echo -e "\e[32m*            11 OF 25                 *"
 echo -e "\e[32m*       BUILDING WIRING PI            *"
 echo -e "\e[32m***************************************"
-echo -e "\n"
+echo -e "\n\e[0m"
 
 ./build
 
@@ -105,7 +105,7 @@ echo -e "\e[32m***************************************"
 echo -e "\e[32m*            12 OF 25                 *"
 echo -e "\e[32m*        REMOVING NODERED             *"
 echo -e "\e[32m***************************************"
-echo -e "\n"
+echo -e "\n\e[0m"
 
 sudo apt-get remove nodered -y
 
@@ -114,7 +114,7 @@ echo -e "\e[32m***************************************"
 echo -e "\e[32m*            13 OF 25                 *"
 echo -e "\e[32m*      REMOVING LEGACY NODE           *"
 echo -e "\e[32m***************************************"
-echo -e "\n"
+echo -e "\n\e[0m"
 
 sudo apt-get remove nodejs -y
 
@@ -123,7 +123,7 @@ echo -e "\e[32m***************************************"
 echo -e "\e[32m*            14 OF 25                 *"
 echo -e "\e[32m*        SETTING DIRECTORY            *"
 echo -e "\e[32m***************************************"
-echo -e "\n"
+echo -e "\n\e[0m"
 
 cd /home/pi
 
@@ -132,7 +132,7 @@ echo -e "\e[32m***************************************"
 echo -e "\e[32m*            15 OF 25                 *"
 echo -e "\e[32m*  INSTALLING NODE VERSION MANAGER    *"
 echo -e "\e[32m***************************************"
-echo -e "\n"
+echo -e "\n\e[0m"
 
 curl -L https://git.io/n-install | N_PREFIX=/home/pi/n bash -s -- -y 6.10.2
 
@@ -141,7 +141,7 @@ echo -e "\e[32m***************************************"
 echo -e "\e[32m*            16 OF 25                 *"
 echo -e "\e[32m*      RESTARTING TERMINAL            *"
 echo -e "\e[32m***************************************"
-echo -e "\n"
+echo -e "\n\e[0m"
 
 . /home/pi/.bashrc
 
@@ -150,7 +150,7 @@ echo -e "\e[32m***************************************"
 echo -e "\e[32m*            17 OF 25                 *"
 echo -e "\e[32m*      INSTALLING SUDO NODE           *"
 echo -e "\e[32m***************************************"
-echo -e "\n"
+echo -e "\n\e[0m"
 
 sudo chmod -R 755 /home/pi/n/bin/*; sudo cp -r /home/pi/n/{bin,lib,share} /usr/local
 
@@ -159,7 +159,7 @@ echo -e "\e[32m***************************************"
 echo -e "\e[32m*            18 OF 25                 *"
 echo -e "\e[32m*   CHECKING NODE VERSION FOR PI      *"
 echo -e "\e[32m***************************************"
-echo -e "\n"
+echo -e "\n\e[0m"
 
 node -v
 
@@ -168,7 +168,7 @@ echo -e "\e[32m***************************************"
 echo -e "\e[32m*            19 OF 25                 *"
 echo -e "\e[32m*  CHECKING NODE VERSION FOR ROOT     *"
 echo -e "\e[32m***************************************"
-echo -e "\n"
+echo -e "\n\e[0m"
 
 sudo node -v
 
@@ -177,7 +177,7 @@ echo -e "\e[32m***************************************"
 echo -e "\e[32m*           20 OF 25                 *"
 echo -e "\e[32m*       SETTING DIRECTORY             *"
 echo -e "\e[32m***************************************"
-echo -e "\n"
+echo -e "\n\e[0m"
 
 cd /home/pi/share
 
@@ -186,7 +186,7 @@ echo -e "\e[32m***************************************"
 echo -e "\e[32m*            21 OF 25                 *"
 echo -e "\e[32m* GETTING WORKSHOP CODE FROM GITHUB   *"
 echo -e "\e[32m***************************************"
-echo -e "\n"
+echo -e "\n\e[0m"
 
 git clone -b start https://github.com/PGallagher69/NottsDevIoTHub.git /home/pi/share/NottsDevIoTHub
 
@@ -195,7 +195,7 @@ echo -e "\e[32m***************************************"
 echo -e "\e[32m*            22 OF 25                 *"
 echo -e "\e[32m*       SETTING DIRECTORY             *"
 echo -e "\e[32m***************************************"
-echo -e "\n"
+echo -e "\n\e[0m"
 
 cd /home/pi/share/NottsDevIoTHub
 
@@ -204,7 +204,7 @@ echo -e "\e[32m***************************************"
 echo -e "\e[32m*            23 OF 25                 *"
 echo -e "\e[32m*   INSTALLING WORKSHOP PACKAGES      *"
 echo -e "\e[32m***************************************"
-echo -e "\n"
+echo -e "\n\e[0m"
 
 npm install
 
@@ -213,7 +213,7 @@ echo -e "\e[32m***************************************"
 echo -e "\e[32m*            24 OF 25                 *"
 echo -e "\e[32m*      SETTING FILE OWNERSHOP         *"
 echo -e "\e[32m***************************************"
-echo -e "\n"
+echo -e "\n\e[0m"
 
 sudo chown -R pi /home/pi/share
 
@@ -222,7 +222,7 @@ echo -e "\e[32m***************************************"
 echo -e "\e[32m*            25 OF 25                 *"
 echo -e "\e[32m*     SETTING FILE PERMISSIONS        *"
 echo -e "\e[32m***************************************"
-echo -e "\n"
+echo -e "\n\e[0m"
 
 sudo chmod -R +755 /home/pi/share
 
@@ -232,6 +232,6 @@ echo -e "\e[32m*                                     *"
 echo -e "\e[32m*           COMPLETE!!!               *"
 echo -e "\e[32m*                                     *"
 echo -e "\e[32m***************************************"
-echo -e "\n"
+echo -e "\n\e[0m"
 
 read -p "Press any key to Finish!" -n1 -s
