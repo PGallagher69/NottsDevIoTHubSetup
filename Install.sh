@@ -9,7 +9,8 @@ mkdir /home/pi/share
 cat SambaShare.txt >> /etc/samba/smb.conf
 sudo service smb restart
 cd /home/pi
-git clone git://git.drogon.net/wiringPi /home/pi/wiringPi
+#git clone git://git.drogon.net/wiringPi /home/pi/wiringPi
+git clone https://github.com/WiringPi/WiringPi.git /home/pi/wiringPi
 cd /home/pi/wiringPi
 ./build
 sudo apt-get remove nodered -y
