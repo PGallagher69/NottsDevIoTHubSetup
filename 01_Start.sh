@@ -17,9 +17,6 @@ sudo apt-get remove nodered -y
 sudo apt-get remove nodejs -y
 cd /home/pi
 curl -L https://git.io/n-install | N_PREFIX=/home/pi/n bash -s -- -y 6.10.2
-. /root/.bashrc
-node -v
 n=$(which node); n=${n%/bin/node}; chmod -R 755 $n/bin/*; sudo cp -r $n/{bin,lib,share} /usr/local
-sudo node -v
-read -n 1 -s -r -p "Press any key to Reboot... You must run 'sudo . /AfterReboot.sh' after the reboot!"
+read -p "Press any key to Reboot... You must run 'sudo . /02_AfterReboot.sh' after the reboot!" -n1 -s
 sudo reboot
