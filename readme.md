@@ -16,4 +16,4 @@ To use this script;
 Clone the Repo using - git clone https://github.com/PGallagher69/NottsDevIoTHubSetup.git 
 Enter the Setup Directory - cd NottsDevIoTHubSetup
 Make the Install.sh file executable - chmod +x install.sh
-run the installation - ./install.sh
+run the installation - sudo ./install.sh
