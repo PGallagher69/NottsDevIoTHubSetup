@@ -234,4 +234,6 @@ echo -e "\e[32m*                                     *"
 echo -e "\e[32m***************************************"
 echo -e "\e[0m\n"
 
-read -p "Press any key to Finish!" -n1 -s
+read -p "Press any key to Reboot!" -n1 -s
+
+sudo reboot
