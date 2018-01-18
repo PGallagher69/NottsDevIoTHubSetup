@@ -21,10 +21,5 @@ curl -L https://git.io/n-install | N_PREFIX=/home/pi/n bash -s -- -y 6.10.2
 node -v
 n=$(which node); n=${n%/bin/node}; chmod -R 755 $n/bin/*; sudo cp -r $n/{bin,lib,share} /usr/local
 sudo node -v
-cd /home/pi/share
-git clone -b start https://github.com/PGallagher69/NottsDevIoTHub.git /home/pi/share/NottsDevIoTHub
-cd /home/pi/share/NottsDevIoTHub
-npm install
-sudo chown -R pi /home/pi/share
-sudo chmod -R +755 /home/pi/share
-read -n 1 -s -r -p "Press any key to finish"
+read -n 1 -s -r -p "Press any key to Reboot... You must run 'sudo . /AfterReboot.sh' after the reboot!"
+sudo reboot
