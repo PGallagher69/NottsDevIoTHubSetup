@@ -8,4 +8,5 @@ cd /home/pi/share/NottsDevIoTHub
 npm install
 sudo chown -R pi /home/pi/share
 sudo chmod -R +755 /home/pi/share
-read -n 1 -s -r -p "Press any key to finish"
+printf "Press Enter to Complete"
+read _
