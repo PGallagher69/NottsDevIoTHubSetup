@@ -61,7 +61,7 @@ echo -e "\e[32m*      RESTART SAMBA SERVICE          *"
 echo -e "\e[32m***************************************"
 echo -e "\e[0m\n"
 
-sudo systemctl restart smb
+sudo systemctl restart smbd
 
 echo -e "\n"
 echo -e "\e[32m***************************************"
