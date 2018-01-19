@@ -1,7 +1,7 @@
 
 [share]
 Comment = Pi shared folder
-Path = /share
+Path = /home/pi/share
 Browseable = yes
 Writeable = Yes
 only guest = no

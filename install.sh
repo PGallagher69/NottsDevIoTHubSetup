@@ -61,7 +61,7 @@ echo -e "\e[32m*      RESTART SAMBA SERVICE          *"
 echo -e "\e[32m***************************************"
 echo -e "\e[0m\n"
 
-sudo service smb restart
+sudo systemctl restart smb
 
 echo -e "\n"
 echo -e "\e[32m***************************************"
@@ -224,7 +224,7 @@ echo -e "\e[32m*     SETTING FILE PERMISSIONS        *"
 echo -e "\e[32m***************************************"
 echo -e "\e[0m\n"
 
-sudo chmod -R +755 /home/pi/share
+sudo chmod -R +777 /home/pi/share
 
 echo -e "\n"
 echo -e "\e[32m***************************************"
