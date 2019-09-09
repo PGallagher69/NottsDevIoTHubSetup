@@ -9,14 +9,14 @@ echo -e "\e[0m\n"
 
 sudo apt-get update
 
-echo -e "\n"
-echo -e "\e[32m***************************************"
-echo -e "\e[32m*            02 OF 25                 *"
-echo -e "\e[32m*        FLASHING FIRMWARE            *"
-echo -e "\e[32m***************************************"
-echo -e "\e[0m\n"
+# echo -e "\n"
+# echo -e "\e[32m***************************************"
+# echo -e "\e[32m*            02 OF 25                 *"
+# echo -e "\e[32m*        FLASHING FIRMWARE            *"
+# echo -e "\e[32m***************************************"
+# echo -e "\e[0m\n"
 
-sudo rpi-update 52241088c1da59a359110d39c1875cda56496764
+# sudo rpi-update 52241088c1da59a359110d39c1875cda56496764
 
 echo -e "\n"
 echo -e "\e[32m***************************************"
