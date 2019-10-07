@@ -188,7 +188,7 @@ echo -e "\e[32m* GETTING WORKSHOP CODE FROM GITHUB   *"
 echo -e "\e[32m***************************************"
 echo -e "\e[0m\n"
 
-git clone -b start https://github.com/PGallagher69/NottsDevIoTHub.git /home/pi/share/NottsDevIoTHub
+git clone -b start https://github.com/pjgpetecodes/NottsDevIoTHub.git /home/pi/share/NottsDevIoTHub
 
 echo -e "\n"
 echo -e "\e[32m***************************************"
